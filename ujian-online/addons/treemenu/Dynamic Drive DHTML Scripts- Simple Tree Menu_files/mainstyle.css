@@ -1,0 +1,703 @@
+body{
+background-color: white;
+color: black;
+font: normal 14px Georgia, Tahoma;
+margin-top: 3px;
+margin-left: 3px;
+margin-bottom: 0;
+padding: 0;
+margin-right: 5px;
+}
+
+/* A:link    { color: #1A2BFF }     unvisited links */
+
+pre, .codehighlight{
+background-color: #EFEFEF;
+font-size: 13px;
+width: 98%;
+border: 1px dashed gray;
+/*background-color: #FFFFD7;*/
+padding: 5px;
+}
+
+code{
+background-color: #EFEFEF;
+font-size: 13px;
+}
+
+.codebg{
+background-color: #EFEFEF;
+}
+
+.cc{ /*code comment*/
+color: #868686;
+}
+
+.codehighlight{
+font-family: monospace;
+}
+
+#ddauthor{
+font-weight: bold;
+}
+
+div.maincontainer, table#maintable, table{
+font-size: 100%;
+clear: both;
+}
+
+#topbanner{
+margin-bottom: 10px;
+width: 100%;
+overflow: hidden;
+}
+
+h3, h3 code{
+font-size: 125%;
+}
+
+h4{
+font-size: 120%;
+}
+
+h4 code{
+font-size: 18px;
+}
+
+/* ######### Top Section ######### */
+
+#topsection{
+background: url(ddlogostrip.png) 82px 20px no-repeat;
+min-height: 120px;
+width: 100%;
+margin: 5px auto;
+position: relative;
+}
+
+img#ddlogo{
+float: left;
+}
+
+
+#toprightdivbox{
+float: right;
+text-align:right;
+margin-top: 25px;
+text-index: -10px;
+}
+
+
+#toprightdivbox form{
+padding: 0;
+margin:0;
+position:relative;
+background: #f0f9ed;
+}
+
+#toprightdivbox #zoom_query{
+margin:7px;
+border-radius: 3px;
+width: 180px;
+padding: 5px;
+padding-right:35px;
+height: 18px;
+border: 1px solid gray;
+-moz-transition: all 0.2s ease-in-out; /* CSS3 transition of hover properties */
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+-moz-box-shadow: inset 0 0 2px gray;
+}
+
+#toprightdivbox #zoom_query:focus{
+-moz-box-shadow: inset 0 0 10px #6fb155;
+box-shadow: inset 0 0 10px #6fb155;
+}
+
+#toprightdivbox #query_submit{
+position: absolute;
+right: 11px;
+top: 30%;
+}
+
+#toprightdivbox{
+clear:right;
+padding-right: 5px;
+}
+
+#toprightdivbox >div:last-of-type{
+margin-right: 5px;
+}
+
+#toprightdivbox a{
+text-decoration: none;
+font-size: 90%;
+}
+
+#pathlinks{
+clear: right;
+font: bold 110% Verdana;
+margin-top: 0.5em;
+margin-bottom: 1em;
+margin-left: 174px;
+}
+
+#pathlinks a:hover{
+color: red;
+}
+
+#spacertd, #spacergif{
+width: 10px; /*CUSTOM CHANGE*/
+height: 1px;
+}
+
+/* ######### Top tabs ######### */
+
+div #topsplitmenu{
+float: left;
+margin-top:47px;
+padding-left:35px;
+}
+
+div #topsplitmenu .sb, div #topsplitmenu .downtoggler{ /* .downtoggler element is dynamically added by script */
+color: white;
+font: bold 13px Georgia;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-border-top-left-radius: 1px;
+-webkit-border-bottom-left-radius: 1px;
+-moz-border-top-left-radius: 1px;
+-moz-border-bottom-left-radius: 1px;
+border-top-left-radius: 1px;
+border-bottom-left-radius: 1px;
+text-decoration: none;
+background: #269517; /* default color of menu button */
+display: inline-block;
+}
+
+div #topsplitmenu .sb:hover{
+background: #3cbb15;
+}
+
+div #topsplitmenu .sb{
+margin-left: 3px;
+}
+
+div #topsplitmenu .sb span.innerspan, div #topsplitmenu .downtoggler span.innerspan{ /* span.innerspan element dynamically added by script inside menu button */
+display: block;
+padding: 8px;
+line-height: 1em;
+/* the following CSS3 gradients add a white to transparent linear gradient to the buttons, to give them a more beveled look */
+background: -moz-linear-gradient(top,  rgba(255,252,252,0.54) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,252,252,0.54)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,252,252,0.54) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,252,252,0.54) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,252,252,0.54) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,252,252,0.54) 0%,rgba(255,255,255,0) 100%); /* W3C */
+}
+
+div #topsplitmenu a.dedicatedtoggler{ /* CSS to apply to toggler when it's a seperate element (instead of being the main menu button itself) */
+-moz-border-radius: 0 4px 4px 0;
+border-radius: 0 4px 4px 0;
+border-left: 1px solid #f5f5f5;
+}
+
+div #topsplitmenu a.sb:nth-of-type(2){
+position: relative;
+top: -2px;
+}
+
+
+div #topsplitmenu a.sb:nth-of-type(n+3), div #topsplitmenu a.dedicatedtoggler:nth-of-type(n+4){
+position: relative;
+top: -4px;
+}
+
+div #topsplitmenu a.sb:nth-last-of-type(2), div #topsplitmenu a.dedicatedtoggler:nth-last-of-type(1){
+top: -2px;
+}
+
+div #topsplitmenu a.downtoggler{ /* CSS to add to toggler element when it's selected */
+background: #269517; /* default hover background color of menu */
+}
+
+div #topsplitmenu a.downtoggler.selectedanchor{
+background: #3cbb15;
+}
+
+div #topsplitmenu .downarrow, div #topsplitmenu rightarrow{
+cursor: pointer;
+}
+
+div #topsplitmenu span.innerspan.downarrow::after{ /* Down arrow (hex value) */
+content: '\25be';
+}
+
+div #topsplitmenu .sb span.innerspan.downarrow:after{ /* Down arrow with space before the arrow */
+content: '\00a0\25be';
+}
+
+
+div #topsplitmenu .rightarrow:after{ /* CSS for right arrow inside splitdropdown */
+content: '\25b8'; /* Add HTML entity based right arrow */
+position: absolute;
+right: 5px;
+font-size: 16px;
+height: 100%;
+}
+
+/* ##### CSS for UL Drop Down Menus of script ###### */
+
+
+ul.dd_splitdropdown{ /*topmost and sub ULs, respectively*/
+font: normal 13px Verdana;
+margin: 0;
+padding: 0;
+position: absolute;
+visibility: hidden;
+left: 0;
+top: 0;
+list-style: none;
+background: white; /* background color of drop down */
+border: 1px solid lightgray;
+border-bottom-width: 0;
+box-shadow: 0 0 8px #818181; /*shadow for CSS3 capable browsers.*/
+-webkit-box-shadow: 0 0 8px #818181;
+-moz-box-shadow: 0 0 8px #818181;
+}
+
+
+ul.dd_splitdropdown li{
+position: relative;
+}
+
+ul.dd_splitdropdown li a{
+display: block;
+width: 160px; /*width of menu (not including side paddings)*/
+color: black;
+background: white;
+text-decoration: none;
+padding: 8px 4px;
+}
+
+ul.dd_splitdropdown li a.title{
+text-transform: uppercase;
+background: #a8d69b;
+font-weight: bold;
+padding: 5px 4px;
+}
+
+ul.dd_splitdropdown li a.title:hover{
+background: #a8d69b;
+}
+
+* html ul.dd_splitdropdown li{ /*IE6 CSS hack*/
+display: inline-block;
+width: 170px; /*width of menu (include side paddings of LI A*/
+}
+
+ul.dd_splitdropdown li a:hover, .dd_splitdropdown li.selected>a{
+background: #eee;
+}
+
+ul.dd_splitdropdown li.separator{
+border-bottom: 1px solid #dedddd;
+}
+
+
+#csslibrarytab a, #csslibrarytab strong{
+background: transparent url("tabs_left_blue.gif") no-repeat left top;
+}
+
+#csslibrarytab a span{
+background: transparent url("tabs_right_blue.gif") no-repeat right top;
+}
+
+#csslibrarytab a:hover{
+background-position:0% -150px;
+}
+
+#csslibrarytab a:hover span{
+color: #fff;
+background-position:100% -150px;
+}
+
+
+
+/* ######### Content Area ######### */
+
+
+#contentarea{
+/*background-color: white;*/
+}
+
+/* #contentarea A:visited { color: navy }    visited links   */
+
+.categoryarea b a{ /*category pages*/
+font-size: 110%;
+}
+
+.curlycontainer{
+border: 1px solid #b8b8b8;
+margin-bottom: 1em;
+
+}
+
+.curlycontainer .innerdiv{
+background: transparent url(../brcorner.gif) bottom right no-repeat;
+position: relative;
+left: 2px;
+top: 2px;
+padding: 1px 4px 15px 5px;
+}
+
+.browserlist{ /*category pages*/
+color: #7A7A7A;
+font-family: Arial;
+font-weight: bold;
+}
+
+.categoryarea #bottomlegend{ /*category pages*/
+list-style-type: disk;
+list-style-image: url(bullet.png);
+margin: auto auto 10px 18px;
+padding: 0;
+color: #454545;
+}
+
+.categoryarea .alsolisted{ /*category pages*/
+font-size: 95%;
+font-style: italic;
+}
+
+.categoryarea .alsolisted img{ /*category pages*/
+margin-top: 5px;
+}
+
+.categoryarea .alsolisted a{
+text-decoration: none;
+color: navy;
+}
+
+#scriptheader{
+border: 1px solid #BEBEBE;
+border-width: 0px 0 1px 0;
+padding: 1px;
+background: white url(headerbg.gif);
+}
+
+#scriptheader h3{
+font: bold 20px Arial;
+display: inline;
+}
+
+#scriptheader h3:before{
+content: ":: ";
+}
+
+#scriptheaderFoot{
+font: normal 12px Verdana;
+margin-bottom: 0.8em;
+padding-top: 2px;
+}
+
+#ddauthor{
+font-weight: bold;
+}
+
+.compatlist{
+position: relative;
+top: 3px;
+font: bold 13px Arial;
+float: right;
+}
+
+.rightit{
+float: right;
+}
+
+.codecontainer{
+height: 150px;
+border: 1px solid gray;
+width: 98%;
+}
+
+.selectall{
+padding: 3px 6px 4px 6px;
+text-decoration: none;
+font: bold 13px Verdana;
+color: navy;
+background-color: #FFFFAA;
+border: 1px solid gray;
+border-bottom-width: 0;
+}
+
+.selectall:hover{
+border-color: black;
+color: black;
+background-color: #ffef97;
+}
+
+.navselectform{
+margin: 0;
+padding: 0;
+float: right;
+}
+
+.navselectform select{
+font: bold 12px Arial;
+background-color: lightyellow;
+}
+
+.navselectheader{
+font-size: 22px;
+width: 80%;
+color: darkred;
+border-bottom: 5px solid black;
+}
+
+.navselectlist{
+font-weight: bold;
+text-transform: uppercase;
+}
+
+
+ul.navselectlist li{
+margin-bottom: 5px;
+}
+
+ul.navselectlist li ul{ /*sub ul*/
+margin-top: 5px;
+text-transform: none;
+font-weight: normal;
+}
+
+
+/* ######### Sub Category list ######### */
+
+.subcategorylist{
+list-style-type: disk;
+list-style-image: url(heart.png);
+margin: 5px auto 10px 18px;
+padding: 0;
+}
+
+.subcategorylist li{
+padding: 3px 0;
+background-color: #ececec;
+}
+
+
+.subcategorylist li a{
+color: #449805;
+font: bold 120% Arial;
+}
+
+/* ######### Left Menu ######### */
+
+#leftbar{
+width: 165px;
+/*background-color: white;*/
+}
+
+#leftbar a:hover{
+/*color: #FF8000;*/
+}
+
+.categorylinks{
+list-style: none;
+margin: 0;
+margin-bottom:1em;
+margin-left: 4px;
+padding: 0;
+
+}
+
+.categorylinks li{
+padding-bottom: 1px;
+background: url(graygradient.png) top left repeat-x;
+}
+
+.categorylinks li a{
+margin-left: -3px;
+padding: 6px 1px;
+padding-left: 4px;
+font-size: 12px;
+display: block;
+color: #449805;
+text-decoration: none;
+font-weight: bold;
+border-bottom: 1px solid #ececec;
+}
+
+.categorylinks a:visited{color: #449805; }
+.categorylinks a:hover {	color: #fff;	background: #51B906; text-decoration: none; }
+
+.diffpointer{
+list-style-image: url(arrow.png);
+}
+
+#leftbar .headers, #leftcolumn .headers{
+color: white;
+font: bold 110% Arial;
+background: #008000 url(greenblock.png) top left no-repeat;
+padding: 3px 2px;
+margin-bottom:3px;
+text-align: center;
+-webkit-border-radius: 0 10px 10px 0;
+-moz-border-radius: 0 10px 10px 0;
+border-radius: 0 10px 10px 0;
+-webit-box-shadow: 5px 2px 3px rgba(160,160,160,.98), -9px 0 10px rgba(200,228,178,.5) inset;
+-moz-box-shadow: 5px 2px 3px rgba(160,160,160,.98), -9px 0 10px rgba(200,228,178,.5) inset;
+box-shadow: 5px 2px 3px rgba(160,160,160,.98), -9px 0 10px rgba(200,228,178,.5) inset;
+}
+
+#leftbar .menuitems{
+list-style-type: disk;
+list-style-image: url(arrow.gif); /*CUSTOM CHANGE*/
+margin: 5px auto 10px 17px;
+padding: 0;
+line-height: 1.2em;
+}
+
+#leftbar .menuitems li{
+padding-bottom: 8px;
+background-image: url(menuline.gif);
+background-repeat: no-repeat;
+background-position: left bottom;
+}
+
+#leftbar .menuitems li a{
+text-decoration: none;
+font-weight: bold;
+}
+
+/* ######### Footer ######### */
+
+
+#footer{
+clear: left;
+width: 100%;
+height: 100px;
+margin: 0;
+margin-top: 1em;
+position: relative;
+background: #69a148;
+background: rgb(87,122,55);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(87,122,55,1) 0%, rgba(105,161,72,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(87,122,55,1)), color-stop(100%,rgba(105,161,72,1)));
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(87,122,55,1) 0%,rgba(105,161,72,1) 100%);
+background: -o-radial-gradient(center, ellipse cover,  rgba(87,122,55,1) 0%,rgba(105,161,72,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover,  rgba(87,122,55,1) 0%,rgba(105,161,72,1) 100%);
+background: radial-gradient(ellipse at center,  rgba(87,122,55,1) 0%,rgba(105,161,72,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#577a37', endColorstr='#69a148',GradientType=1 );
+color: #eee;
+text-align: center;
+padding: 0;
+}
+
+#footer a{
+color: #FFFF80;
+}
+
+#footer a img{
+border-width:0;
+}
+
+#footer #subfooter{
+width: 900px;
+margin:0 auto;
+}
+
+
+#subfooter-left, #subfooter-center, #subfooter-right{
+float: left;
+text-align:left;
+font-size: 14px;
+}
+
+#subfooter-left{
+width: 170px;
+padding:5px;
+text-align: right;
+}
+
+#subfooter-center{
+width: 510px;
+margin:0 10px;
+height: 50px;
+font-size:12px;
+background: #3c542b;
+}
+
+#subfooter-center:after{
+content:"";
+display:block;
+clear:both;
+visibility:hidden;
+height:0;
+font-size:0;
+}
+
+#subfooter-center .drop-shadow {
+position:relative;
+float:left;
+width: 100%;
+height: 100%;
+background:#3c542b;
+-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+#subfooter-center .drop-shadow:before,
+#subfooter-center .drop-shadow:after {
+content:"";
+position:absolute;
+z-index:-2;
+}
+
+#subfooter-center .drop-shadow div{
+padding: 5px;
+}
+
+#subfooter-center .curled {
+border:1px solid #3c542b;
+-moz-border-radius:0 0 120px 120px / 0 0 6px 6px;
+border-radius:0 0 120px 120px / 0 0 6px 6px;
+}
+
+#subfooter-center .curled:before,
+#subfooter-center .curled:after {
+bottom:12px;
+left:10px;
+width:50%;
+height:55%;
+max-width:200px;
+max-height:100px;
+-webkit-box-shadow:0 8px 12px rgba(0, 0, 0, 0.5);
+-moz-box-shadow:0 8px 12px rgba(0, 0, 0, 0.5);
+box-shadow:0 8px 12px rgba(0, 0, 0, 0.5);
+-webkit-transform:skew(-8deg) rotate(-3deg);
+-moz-transform:skew(-8deg) rotate(-3deg);
+-ms-transform:skew(-8deg) rotate(-3deg);
+-o-transform:skew(-8deg) rotate(-3deg);
+transform:skew(-8deg) rotate(-3deg);
+}
+
+#subfooter-center .curled:after {
+right:10px;
+left:auto;
+-webkit-transform:skew(8deg) rotate(3deg);
+-moz-transform:skew(8deg) rotate(3deg);
+-ms-transform:skew(8deg) rotate(3deg);
+-o-transform:skew(8deg) rotate(3deg);
+transform:skew(8deg) rotate(3deg);
+}
+
+#subfooter-right{
+width: 180px;
+padding:5px;
+}
